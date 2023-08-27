@@ -1,0 +1,10 @@
+Data/PluginScripts.rxdata
+Data/Scripts/001_Technical/001_MKXP_Compatibility.rb
+Data/Scripts/006_Map
+renderer/004_TileDrawingHelper.rb
+Data/System.rxdata
+Data/Tilesets.rxdata
+Data/messages.dat
+file_downloader.sh
+new_files.sh
+version

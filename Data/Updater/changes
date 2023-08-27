@@ -1,3 +1,5 @@
 Data/PluginScripts.rxdata
-new_files.sh
+Data/Scripts/001_Technical/001_MKXP_Compatibility.rb
+Data/System.rxdata
+file_downloader.sh
 version
