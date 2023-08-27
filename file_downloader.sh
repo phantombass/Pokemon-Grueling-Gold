@@ -21,3 +21,4 @@ do
 	printf "%s\n" "${files[@]}" > Data/Changes/${before}/changes
 done
 rm "version_temp"
+rm "vers_temp"
