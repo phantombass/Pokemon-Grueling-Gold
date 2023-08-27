@@ -16,11 +16,14 @@ Data/Map205.rxdata
 Data/MapInfos.rxdata
 Data/PluginScripts.rxdata
 Data/Scripts/001_Technical/001_MKXP_Compatibility.rb
+Data/Scripts/006_Map
+renderer/004_TileDrawingHelper.rb
 Data/Skills.rxdata
 Data/States.rxdata
 Data/System.rxdata
 Data/Tilesets.rxdata
 Data/Weapons.rxdata
+Data/messages.dat
 Graphics/MODTS/Backgrounds/background.png
 Graphics/MODTS/Backgrounds/bw.png
 Graphics/MODTS/Backgrounds/clouded.png
