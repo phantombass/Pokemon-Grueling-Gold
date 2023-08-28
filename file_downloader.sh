@@ -11,14 +11,21 @@ do
 	echo ${before}
 	echo ${after}
 	files=($(git diff --name-only ${before}...${after} -- . :^Data/Updater))
+	deleted=($(git diff --name-only --diff-filter=D ${before}...${after} -- . :^Data/Updater))
 	for file in ${files[@]}
 	do
 		echo $file
 	done
+	for del in ${deleted[@]}
+	do
+		echo $del
+	done
 	echo 'mkfile() { mkdir -p "$(dirname "$1")" && touch "$1" ;  }' >> ~/.bashrc
 	source ~/.bashrc
 	mkfile Data/Changes/${before}/changes
+	mkfile Data/Changes/${before}/deleted
 	printf "%s\n" "${files[@]}" > Data/Changes/${before}/changes
+	printf "%s\n" "${deleted[@]}" > Data/Changes/${before}/deleted
 done
 rm "version_temp"
 rm "vers_temp"
