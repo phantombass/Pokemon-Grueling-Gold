@@ -1,4 +1,5 @@
 #!/Data/Updater/bin/sh
+git fetch --tags
 vers=($(git tag))
 curl -o "version_temp" https://raw.githubusercontent.com/phantombass/Pokemon-Grueling-Gold/master/version
 link=`cat version_temp`
