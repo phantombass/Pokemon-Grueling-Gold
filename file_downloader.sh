@@ -22,3 +22,4 @@ do
 done
 rm "version_temp"
 rm "vers_temp"
+rm -r Data/Changes/master
