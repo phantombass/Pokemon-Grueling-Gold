@@ -11,8 +11,8 @@ do
 	after="${link}"
 	echo ${before}
 	echo ${after}
-	files=($(git diff --name-only --diff-filter=d ${before}...${after} -- . :^Data/Updater :^Data/Scripts/06_Map_Renderer))
-	deleted=($(git diff --name-only --diff-filter=D ${before}...${after} -- . :^Data/Updater :^Data/Scripts/06_Map_Renderer))
+	files=($(git diff --name-only --diff-filter=d ${before}...${after} -- . :^Data/Updater :^Data/Scripts/06_Map_Renderer :!*download.sh :!*delete.sh :!*new_file.sh :!*file_downloader.sh))
+	deleted=($(git diff --name-only --diff-filter=D ${before}...${after} -- . :^Data/Updater :^Data/Scripts/06_Map_Renderer :!*download.sh :!*delete.sh :!*new_file.sh :!*file_downloader.sh))
 	for file in ${files[@]}
 	do
 		echo $file
